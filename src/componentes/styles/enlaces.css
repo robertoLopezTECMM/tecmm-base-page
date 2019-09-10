@@ -1,0 +1,24 @@
+.div-principalEnlaces{
+  background-color: #6D356C;
+  width:100%;
+  height: auto;
+  border-top: white 5px solid;
+  border-bottom: white 5px solid;
+
+}
+
+.div-principalEnlaces img{
+  max-width: 24.6%;
+}
+
+.div-principalEnlaces img:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.div-principalEnlaces h1{
+  color: white;
+  font-family: "Gotham-Ultra";
+  font-size: 3vh;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}

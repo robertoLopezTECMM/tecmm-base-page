@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url(../../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Gotham-Ultra';
+  src: url(../../fonts/Gotham-Ultra.otf);
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url(../../fonts/Gotham-Book.ttf);
+}
+
+
+
+.div-principalMenuCentra{
+  background-color: white;
+  }
+
+.img-menuCentral-header{
+  width:100%;
+}
+
+.img-menuCentral-nombre{
+  width:100%;
+}
+
+.menuCentral {
+  width: 100%;
+  height: 45px;
+  padding-left: 5%;
+
+  overflow:visible;
+  border-bottom: 3px solid #6D356C;
+
+}
+
+.menuCentral a {
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+
+  text-decoration: none;
+  font-size: 1.7vh;
+  font-family: 'Gotham';
+  cursor: pointer;
+}
+
+
+/*RESOLUCION PARA IMAC*/
+@media(min-width:2500px) and (max-width:5000px){
+  .menuCentral {
+    width: 100%;
+    height: 85px;
+    padding-left: 4%;
+
+    overflow:visible;
+    border-bottom: 8px solid #6D356C;
+
+  }
+
+  .menuCentral a {
+    float: left;
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 24px 26px;
+
+    text-decoration: none;
+    font-size: 1.7vh;
+    font-family: 'Gotham';
+    cursor: pointer;
+  }
+}
+
+
+/*RESOLUCION PARA MACKBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+  .menuCentral {
+    width: 100%;
+    height:55px;
+    padding-left: 4%;
+
+    overflow:visible;
+    border-bottom: 5px solid #6D356C;
+
+  }
+
+  .menuCentral a {
+    float: left;
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+
+    text-decoration: none;
+    font-size: 1.7vh;
+    font-family: 'Gotham';
+    cursor: pointer;
+  }
+}
+
+
+/*RESOLUCION PROMEDIO PARA CELULARES*/
+@media(min-width:420px){
+
+}
