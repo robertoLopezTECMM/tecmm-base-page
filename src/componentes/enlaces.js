@@ -17,11 +17,22 @@ class Enlaces extends Component {
      return (
        <div className="div-principalEnlaces">
         <h1>ENLACES</h1>
-        <img src="http://tecmm.edu.mx/imagenesCampus/sice.png"/>
-        <img style={{marginLeft:"5px", marginRight:"5px"}} src="http://tecmm.edu.mx/imagenesCampus/moodle.png"/>
 
-        <img style={{marginRight:"5px"}}  src="http://tecmm.edu.mx/imagenesCampus/convocatorias.JPG"/>
-        <img src="http://tecmm.edu.mx/imagenesCampus/posgrados.JPG"/>
+        <a target="_blank" href="INSERTE AQUI EL ENLACE A SICE">
+          <img src="http://tecmm.edu.mx/imagenesCampus/sice.png"/>
+        </a>
+
+        <a target="_blank" href="INSERTE AQUI EL ENLACE A MOODLE">
+          <img style={{marginLeft:"5px", marginRight:"5px"}} src="http://tecmm.edu.mx/imagenesCampus/moodle.png"/>
+        </a>
+
+        <a target="_blank" href="http://tecmm.edu.mx/#/Convocatorias">
+          <img style={{marginRight:"5px"}}  src="http://tecmm.edu.mx/imagenesCampus/convocatorias.JPG"/>
+        </a>
+
+        <a target="_blank" href="http://www.posgrado.tecmm.edu.mx/">
+          <img src="http://tecmm.edu.mx/imagenesCampus/posgrados.JPG"/>
+        </a>
 
        </div>
      );

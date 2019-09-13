@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {withGetScreen} from 'react-getscreen'
 import ItemsCarousel from 'react-items-carousel';
 import { Carousel } from 'react-responsive-carousel';
 import Slider from "react-slick";
@@ -59,13 +60,17 @@ class Noticiero extends Component {
 
 
   render() {
-     const settings = {
-       dots:false,
-       infinite: true,
-       speed: 900,
-       slidesToShow: 4,
-       slidesToScroll: 2
-     };
+
+
+      if(this.props.isMobile() || this.props.isTablet()){
+        const settings = {
+          dots:false,
+          infinite: true,
+          speed: 900,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        };
+
      return (
        <div className="div-principalNoticiero">
          <h2>NOTICIAS TECMM</h2>
@@ -79,7 +84,33 @@ class Noticiero extends Component {
          </Slider>
        </div>
      );
+
+      }else{
+        const settings = {
+          dots:false,
+          infinite: true,
+          speed: 900,
+          slidesToShow: 4,
+          slidesToScroll: 2
+        };
+
+        return (
+          <div className="div-principalNoticiero">
+            <h2>NOTICIAS TECMM</h2>
+            <Slider  {...settings}>
+              {this.state.noticiasArray.map((it)=>(
+                <div className="div-noticiaItem">
+                 <img src={it.imagen}/>
+                 <div className="div-tituloNoticia">{it.titulo}</div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        );
+      }
    }
  }
 
-export default Noticiero;
+
+const options = {mobileLimit: 420, tabletLimit: 770}
+export default withGetScreen(Noticiero, options);

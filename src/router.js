@@ -3,6 +3,8 @@ import {Route, HashRouter, BrowserRouter, Switch,Router} from 'react-router-dom'
 
 
 import Landing from './componentes/landing.js';
+import OfertaAcademica from './componentes/ofertaAcademica.js';
+import ComponentePrueba from './componentes/componentePrueba.js';
 
 
 class RouterPrincipal extends Component {
@@ -12,6 +14,9 @@ class RouterPrincipal extends Component {
         <HashRouter>
           <Switch>
             <Route exact path="/" component={Landing}/>
+            <Route path="/ofertaAcademica" component={OfertaAcademica}/>
+            <Route path="/componentePrueba" component={ComponentePrueba}/>
+
           </Switch>
         </HashRouter>
       </div>

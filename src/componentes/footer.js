@@ -46,13 +46,13 @@ class Footer extends Component{
 
             </div>
           </div>
+
         </div>
 
         <div className="div-bannerSEP">
           <div className="div-direccion">
-            <p>**DOMICILIO DEL CAMPUS**</p>
-            <p>**DOMICILIO DEL CAMPUS**</p>
-
+            <a>Av. José Guadalupe Tejeda #557</a><br/>
+            <a>Arandas, Jalisco.</a><br/>
             <a href="#Contacto">Consulta Directorio, Aqui</a>
           </div>
           <img src='http://tecmm.edu.mx/imagesReact/images/linksFooter/banner-sep.jpg'/>
@@ -63,56 +63,87 @@ class Footer extends Component{
         </div>
 
         <div className="div-bannerSepSinTexto">
-          <img src="http://tecmm.edu.mx/imagesReact/images/linksFooter/banner-sep-sinTexto.jpg"/>
+          <img  src="http://tecmm.edu.mx/imagesReact/images/linksFooter/banner-sep-sinTexto.jpg"/>
         </div>
+
+
 
         <div className="div-enlaces-gobierno">
 
           <div className="div-enlaces">
 
             <h2>Enlaces</h2>
+            <ul>
+              <li>
+                <a href="https://www.gob.mx/accesibilidad">Declaración de accesibilidad</a>
+              </li>
 
-            <a href="https://www.gob.mx/accesibilidad">Declaración de accesibilidad</a><br/>
+              <li>
+                <a href="">Aviso de privacidad</a>
+              </li>
 
-            <a href="">Aviso de privacidad</a><br/>
+              <li>
+                <a href="https://www.gob.mx/terminos">Términos y condiciones</a>
+              </li>
 
-            <a href="https://www.gob.mx/terminos">Términos y condiciones</a><br/>
+              <li>
+                <a href="http://www.ordenjuridico.gob.mx/">Marco jurídico</a>
+              </li>
 
-            <a href="http://www.ordenjuridico.gob.mx/">Marco jurídico</a><br/>
+              <li>
+                <a href="http://portaltransparencia.gob.mx/buscador/search/search.do?method=begin">Portal de obligaciones y de transparencia</a>
+              </li>
 
-            <a href="http://portaltransparencia.gob.mx/buscador/search/search.do?method=begin">Portal de obligaciones y de transparencia</a><br/>
+              <li>
+                <a href="">Sistema infomex</a>
+              </li>
 
-            <a href="">Sistema infomex</a><br/>
+              <li>
+                <a href="http://inicio.ifai.org.mx/SitePages/ifai.aspx">INAI</a>
+              </li>
 
-            <a href="http://inicio.ifai.org.mx/SitePages/ifai.aspx">INAI</a><br/>
-
-            <a href="https://www.gob.mx/sitemap">Mapa de sitio</a><br/>
-
+              <li>
+                <a href="https://www.gob.mx/sitemap">Mapa de sitio</a>
+              </li>
+            </ul>
             <img src="http://tecmm.edu.mx/imagesReact/images/linksFooter/GobMX.png"/>
           </div>
 
           <div className="div-QueEsGob">
             <h2>¿Qué es gob.mx?</h2>
+            <ul>
+              <li>
+                <a>Es el portal único de trámites,<br/> información y participación ciudadana. </a>
+                <a href="https://www.gob.mx/que-es-gobmx" >Leer más</a>
+              </li>
 
-            <p >Es el portal único de trámites,<br/> información y participación ciudadana.<br/>
-            <a href="https://www.gob.mx/que-es-gobmx" >Leer más</a></p><br/>
+              <li>
+                <a href="https://www.gob.mx/en/index">English</a>
+              </li>
 
-            <a href="https://www.gob.mx/en/index">English</a><br/>
+              <li>
+                <a href="https://www.gob.mx/temas">Temas</a>
+              </li>
 
-            <a href="https://www.gob.mx/temas">Temas</a><br/>
-
-            <a href="http://reformas.gob.mx/">Reformas</a><br/>
+              <li>
+                <a href="http://reformas.gob.mx/">Reformas</a>
+              </li>
+            </ul>
           </div>
 
           <div className="div-Contacto">
 
             <h2>Contacto</h2>
+            <ul>
+              <li>
+                <a>Ayuda: dudas e información</a><br/>
+                <a>gobmx@funcionpublica.gob.mx</a><br/>
+              </li>
 
-            <a>Ayuda: dudas e información</a><br/><br/>
-
-            <a>gobmx@funcionpublica.gob.mx</a><br/><br/>
-
-            <a  href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a>
+              <li>
+                <a  href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a>
+              </li>
+            </ul>
           </div>
 
         </div>

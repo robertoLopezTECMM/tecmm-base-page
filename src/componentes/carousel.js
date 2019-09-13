@@ -37,14 +37,16 @@ import './styles/carousel.css';
       this.state={
         modalVisible : false,
         carouselImages:[
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/CONDONACIONES-2019-2020.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/CONDONACIONES-2019-2020.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/CONDONACIONES-2019-2020.pdf'},
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-2019.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-2019.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/SEGUNDO-EXAMEN-2019.pdf'},
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-EN-LINEA.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-EN-LINEA.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/SEGUNDO-EXAMEN-EN-LINEA.pdf'},
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://controlescolar.tecmm.edu.mx'},
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/cover_5_aniv.png', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'https://www.tecnm.mx/'},
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/Aceptados.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/documentos/lista-aceptados-semestreB-2019/ACEPTADOS_TECMM_2019.pdf'},
-          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/Aceptados%20Modalidad%20en%20L%c3%adnea%20Banner.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/documentos/lista-aceptados-semestreB-2019/Aceptados-en-Linea.pdf'},
+          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/enneit.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/enneit.jpg', description:'ahorita no joven', link:'#eneit'},
+          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/convocatoria-video-2019.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/enneit.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/convocatoria-video-2019.pdf'},
+          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/CONDONACIONES-2019-2020.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/CONDONACIONES-2019-2020.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/CONDONACIONES-2019-2020.pdf'},
+          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-2019.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-2019.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/SEGUNDO-EXAMEN-2019.pdf'},
+          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-EN-LINEA.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/SEGUNDO-EXAMEN-EN-LINEA.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/imagesReact/images/carousel/documentos/SEGUNDO-EXAMEN-EN-LINEA.pdf'},
 
+          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://controlescolar.tecmm.edu.mx'},
+          {image: 'http://tecmm.edu.mx/imagesReact/images/carousel/cover_5_aniv.png', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'https://www.tecnm.mx/'},
+          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/Aceptados.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/documentos/lista-aceptados-semestreB-2019/ACEPTADOS_TECMM_2019.pdf'},
+          //{image: 'http://tecmm.edu.mx/imagesReact/images/carousel/Aceptados%20Modalidad%20en%20L%c3%adnea%20Banner.jpg', name: 'http://tecmm.edu.mx/imagesReact/images/carousel/inscripciones-abiertas.jpg', description:'ahorita no joven', link:'http://tecmm.edu.mx/documentos/lista-aceptados-semestreB-2019/Aceptados-en-Linea.pdf'},
         ],
       }
     }
@@ -74,17 +76,17 @@ import './styles/carousel.css';
             </Carousel>
 
             <div class="ui stackable four column grid">
-              <Link to="/ofertaAcademica">
+              <a href="#ofertaAcademica">
                 <button  className="btn1Oferta">OFERTA<br/>ACADÉMICA</button>
-              </Link>
+              </a>
 
-              <Link to={'/campus'}>
+              <a href="http://tecmm.edu.mx/#/campus">
                 <button className="btn2Campus">RED DE CAMPUS<br/>EN JALISCO</button>
-              </Link>
+              </a>
 
-              <form action="http://controlescolar.tecmm.edu.mx/">
+              <a href="http://controlescolar.tecmm.edu.mx/">
                 <button className="btn3Escolares">SERVICIOS<br/>ESCOLARES</button>
-              </form>
+              </a>
 
             </div>
 
