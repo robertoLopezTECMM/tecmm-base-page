@@ -5,353 +5,82 @@
   background-color: white;
 }
 
-.img-ofertaAcademica-bannerTNM{
-  width:100%;
-}
-
 .img-ofertaAcademica-portada{
   width:100%;
 }
 
-.div-cardsCarreras{
-  width:100%;
-  height: 100%;
-  background-color: grey;
-  display: flex;
-}
-
-.div-cardsIngenierias{
-  width: 75%;
-  height: auto;
-  background-color: transparent;
-
-}
-
-.grid-container-ingenierias{
-  width: 100%;
-  height: 285vh;
-
-}
-
-
-
 .div-carreras{
+  padding: 3%;
   width:100%;
   height: 100%;
-  background-color: grey;
-
-}
-
-.div-ingenierias{
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: auto;
-  background-color: transparent;
-
+  background-color: ;
 }
 
 .img-ItemCarrera{
-  max-width:350px;
-  max-height:350px;
+  max-width:300px;
+  max-height:300px;
   margin:3px;
   border:solid 2px #6D356C;
 }
 
 
-
-
-
-
-.ui.cards{
-  background-color: transparent;
-  height: 100%;
-  margin: 0%;
-
-}
-
-.ui.card, .ui.cards>.card{
-  width: 355px;
-}
-
-.grid-ingenierias-item{
-  width: 100%;
-  height: 100%;
-  padding: 1%;
-}
-
-.img-CarreraItem{
-  width: 100%;
-  height: 100%;
-
-
-}
-
-.img-CarreraItem:hover{
-  opacity: 0.7;
-}
-
-.div-cardsMaestrias{
-  width:25%;
-  height: 100%;
-  background-color: grey;
-  margin-top: 1%;
-
-}
-
-.grid-container-maestrias{
-  width:100%;
-  height: auto;
-  display:grid;
-  grid-template-columns: auto;
-
-}
-
-.grid-maestrias-item{
-  height: 100%;
-  height: 100%;
-  padding: 1%;
-
-}
-
-
-.img-MaestriaItem{
-  width: 100%;
-  height: 100%;
-  border-radius: 2%;
-
-}
-
-.img-MaestriaItem:hover{
-  opacity: 0.7;
-}
-
-@media(min-width: 5000px){
-  .div-principal-ofertaAcademica{
-    width:60%;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
-  .div-cardsIngenierias{
-    width: 75%;
-    height: 205vh;
-    background-color: grey;
-
-  }
-
-  .grid-container-ingenierias{
-    width: 100%;
-    height: 205vh;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .div-cardsMaestrias{
-    width:25%;
-    height: 205vh;
-    background-color: grey;
-
-  }
-
-  .grid-container-maestrias{
-    width:100%;
-    height: 205vh;
-    display:grid;
-    grid-template-columns: auto;
-
-  }
-}
-
-@media(min-width: 2500px){
-  .div-principal-ofertaAcademica{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
-  .div-cardsIngenierias{
-    width: 75%;
-    height: 205vh;
-    background-color: grey;
-
-  }
-
-  .grid-container-ingenierias{
-    width: 100%;
-    height: 205vh;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .div-cardsMaestrias{
-    width:25%;
-    height: 205vh;
-    background-color: grey;
-
-  }
-
-  .grid-container-maestrias{
-    width:100%;
-    height: 205vh;
-    display:grid;
-    grid-template-columns: auto;
-
-  }
-
-  .ui.card, .ui.cards>.card{
-    width: 365px;
-  }
-}
-
-@media(max-width: 1700px){
-
-  .ui.card, .ui.cards>.card{
-    width: 320px;
-  }
-
-}
-
-@media(max-width: 770px){
-
-  .div-principal-ofertaAcademica{
-    width:100%;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-
-  .img-ofertaAcademica-bannerTNM{
-    width:100%;
-    margin-bottom: -1%;
-  }
-
-  .img-nombreTECMM{
-    width: 100%;
-    height: 100%;
-    margin-bottom: -0.5%;
-  }
-
-  .div-cardsCarreras{
+@media(min-width:2500px) and (max-width:5000px){
+  .div-carreras{
+    padding: 3%;
     width:100%;
     height: 100%;
     background-color: ;
-    display: block;
   }
-
-  /*INGENIERIAS Y LICENCIATURAS*/
-  .div-cardsIngenierias{
-    width: 100%;
-    height: 100%;
-    background-color: grey;
-
-  }
-
-  .grid-container-ingenierias{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  /*INGENIERIAS Y LICENCIATURAS*/
-
-
-  /*MAESTRIAS*/
-  .div-cardsMaestrias{
-    width:100%;
-    height: 100%;
-    background-color: grey;
-  }
-
-  .grid-container-maestrias{
-    width:100%;
-    height: 100%;
-    display:grid;
-    grid-template-columns: auto auto auto;
-  }
-  /*MAESTRIAS*/
-}
-
-@media(max-width: 420px){
-
-  .div-principal-ofertaAcademica{
-    width:100%;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-
-  .img-ofertaAcademica-bannerTNM{
-    width:100%;
-    margin-bottom: -1%;
-  }
-
-  .img-nombreTECMM{
-    width: 100%;
-    height: 100%;
-    margin-bottom: -0.5%;
-  }
-
-  .div-cardsCarreras{
-    width:100%;
-    height: 100%;
-    background-color: ;
-    display: block;
-  }
-
-
-  .ui.cards{
-    background-color: transparent;
-    height: auto;
-    margin: 0%;
-    padding: 0%;
-  }
-
-  .card {
-    width: 46%!important;
-
-
-  }
-
 
   .img-ItemCarrera{
-  max-width:150px;
-  max-height:150px;
-  margin:3px;
-  border:solid 2px #6D356C;
+    max-width:500px;
+    max-height:500px;
+    margin:3px;
+    border:solid 2px #6D356C;
+  }
+
 }
 
-  /*INGENIERIAS Y LICENCIATURAS*/
-  .div-cardsIngenierias{
-    width: 100%;
-    height: 100%;
-    background-color: grey;
 
-  }
-
-  .grid-container-ingenierias{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  /*INGENIERIAS Y LICENCIATURAS*/
-
-
-  /*MAESTRIAS*/
-  .div-cardsMaestrias{
+/*RESOLUCION PARA MACKBOOK PRO*/
+@media(min-width:1600px) and (max-width: 2400px){
+  .div-carreras{
+    padding: 3%;
     width:100%;
     height: 100%;
+    background-color: ;
+  }
+
+  .img-ItemCarrera{
+    max-width:350px;
+    max-height:350px;
+    margin:3px;
+    border:solid 2px #6D356C;
+  }
+}
+
+
+/*RESOLUCION PARA CELULARES*/
+@media(min-width:100px) and (max-width: 420px){
+  .div-principal-ofertaAcademica{
+    width:100%;
+    margin-left: 0%;
+    margin-right: 0%;
     background-color: grey;
   }
 
-  .grid-container-maestrias{
+  .div-carreras{
+    padding: 0%;
     width:100%;
     height: 100%;
-    display:grid;
-    grid-template-columns: auto auto auto;
+    background-color: ;
   }
 
+  .img-ItemCarrera{
+    max-width:180px;
+    max-height:180px;
+    margin:3px;
+    border:solid 2px #6D356C;
+  }
 
-  /*MAESTRIAS*/
 }

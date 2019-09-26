@@ -18,7 +18,7 @@ class MenuCentral extends Component {
 
   openMenu(e){
     this.setState({
-      width:"100%"
+      width:"80%"
     })
   }
 
@@ -30,10 +30,10 @@ class MenuCentral extends Component {
 
   render(){
     const options = [
-      { key: 1, text: 'INSTALACIONES', value: "http://arandas.tecmm.edu.mx/imagenes/header-menuCentral.jpg" },
-      { key: 2, text: 'CLUBES', value: 2 },
-      { key: 3, text: 'DIRECTORIO', value: 1 },
-      { key: 4, text: 'CALENDARIO', value: 2 },
+      { key: 1, text: 'Quienés Somos', value: "http://arandas.tecmm.edu.mx/imagenes/header-menuCentral.jpg" },
+      { key: 2, text: 'Rectoria', value: 2 },
+      { key: 3, text: 'Bienvenida', value: 1 },
+      { key: 4, text: 'Modelo Académico', value: 2 },
     ]
 
     const styleDrawer = {
@@ -45,28 +45,32 @@ class MenuCentral extends Component {
 
         {/*MENU MOVIL*/}
           <div style={styleDrawer} id="mySidenav" class="sidenav">
-            <img class="tecmmicon" src="http://tecmm.edu.mx/imagesReact/images/logo-tecmm.png"/>
-            <a class="closebtn" onClick={this.closeMenu.bind(this)}>&times;</a>
+            <img class="tecmmicon" src="http://tecmm.edu.mx/imagesReact/images/logo-tecmm-blanco.png"/>
+            <a class="closebtn" onClick={this.closeMenu.bind(this)}><i class="times icon"></i></a>
             <a>
               SOMOS TECMM
               <ul>
                 <li>
-                  <a>opcion</a>
+                  <a href="http://tecmm.edu.mx/#/quienesSomos">Quienés Somos</a>
                 </li>
 
                 <li>
-                  <a>opcion 2</a>
+                  <a href="#rectoria">Rectoria</a>
                 </li>
 
                 <li>
-                  <a>opcion 3</a>
+                  <a href="http://tecmm.edu.mx/#/bienvenida">Bienvenida</a>
+                </li>
+
+                <li>
+                  <a href="http://tecmm.edu.mx/#/modeloAcademico">Modelo Académico</a>
                 </li>
               </ul>
             </a>
 
             <a href="http://controlescolar.tecmm.edu.mx">ADMISIÓN</a>
             <a href="http://tecmm.edu.mx/#/vidaEstudiantil">VIDA ESTUDIANTIL</a>
-            <a href="http://vinculacion.tecmm.edu.mx/">VINCULACION</a>
+            <a href="http://vinculacion.tecmm.edu.mx/">VINCULACIÓN</a>
             <a href="http://www.areaacademica.tecmm.edu.mx/">ÁREA ACADÉMICA</a>
             <a href="http://tecmm.edu.mx/#/contacto">CONTACTO</a>
             <a href="http://tecmm.edu.mx/#/igualdad">SGIG</a>
@@ -84,12 +88,20 @@ class MenuCentral extends Component {
         <div className="menuCentral">
 
           <a>
-            <Dropdown style={{color:"grey"}} text='SOMOS TECMM' options={options} />
+            <div class="dropdown">
+              <span>SOMOS TECMM <i class="angle down icon"></i></span>
+              <div class="dropdown-content">
+                <a>Quienés Somos</a>
+                <a href="#rectoria">Rectoria</a>
+                <a>Bienvenida</a>
+                <a>Modelo Académico</a>
+              </div>
+            </div>
           </a>
 
           <a href="http://controlescolar.tecmm.edu.mx">ADMISIÓN</a>
           <a href="http://tecmm.edu.mx/#/vidaEstudiantil">VIDA ESTUDIANTIL</a>
-          <a href="http://vinculacion.tecmm.edu.mx/">VINCULACION</a>
+          <a href="http://vinculacion.tecmm.edu.mx/">VINCULACIÓN</a>
           <a href="http://www.areaacademica.tecmm.edu.mx/">ÁREA ACADÉMICA</a>
           <a href="http://tecmm.edu.mx/#/contacto">CONTACTO</a>
           <a href="http://tecmm.edu.mx/#/igualdad">SGIG</a>

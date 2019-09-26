@@ -81,14 +81,13 @@ class OfertaAcademica extends Component{
         <MenuCentral/>
         <img className="img-ofertaAcademica-portada" src={'http://tecmm.edu.mx/imagesReact/images/ofertaAcademicaNueva/portadaOfertaAcademica.jpg'}/>
         <div className="div-carreras">
-          <Grid.Row centered columns={4}>
+
           {this.state.carrerasArray.map((it, key)=>(
             <CarreraItem keyIdenty={key} nombre={it.name} link={it.link} card={it.card} portada={it.portada} youtube={it.youtube} objetivo={it.objetivo} perfil={it.perfilEgreso} reticula={it.reticula} folleto={it.folleto} campus={it.campus}/>
           ))}
-          </Grid.Row>
+          
         </div>
         <Footer/>
-
       </div>
     );
   }
